@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Media</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="destinations.html">Destinations</a> |
+        <a href="itinerary.html">Itinerary</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="media.html">Media</a>
+    </nav>
+
+    <h2>Explore Through Sounds & Sights</h2>
+
+    <h3>Local Music Experience</h3>
+    <audio controls>
+        <source src="media/local-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h3>Latest Travel Vlog</h3>
+    <video width="640" height="360" controls poster="media/vlog-thumbnail.jpg">
+        <source src="media/travel-vlog.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
