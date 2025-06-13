@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Schedule</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="schedule.html">Schedule</a> |
+        <a href="registration.html">Registration</a> |
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <h2>Event Schedule - Annual College Fest 2025</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>10:00 AM</td>
+            <td>Opening Ceremony</td>
+            <td>Main Auditorium</td>
+        </tr>
+        <tr>
+            <td>11:00 AM - 1:00 PM</td>
+            <td colspan="2">Special Guest Talk and Panel Discussion</td>
+        </tr>
+        <tr>
+            <td>2:00 PM</td>
+            <td>Dance Competition</td>
+            <td>Open Stage</td>
+        </tr>
+        <tr>
+            <td>4:00 PM</td>
+            <td>Music Concert</td>
+            <td>Auditorium</td>
+        </tr>
+    </table>
+</body>
+</html>
