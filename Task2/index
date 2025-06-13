@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wanderlust Chronicles</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="destinations.html">Destinations</a> |
+        <a href="itinerary.html">Itinerary</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="media.html">Media</a>
+    </nav>
+
+    <h1>Welcome to <b>Wanderlust Chronicles</b></h1>
+    <p>Embark on a journey full of <b>Adventure</b>, experience diverse <i>Culture</i>, and immerse yourself in the beauty of <u>Nature</u>. This blog is dedicated to sharing unforgettable stories, practical travel tips, and breathtaking experiences from around the world.</p>
+
+    <p>Read our latest posts:</p>
+    <ul>
+        <li><a href="destinations.html">Top 5 Places to Visit in 2025</a></li>
+        <li><a href="itinerary.html">7-Day European Adventure Itinerary</a></li>
+        <li><a href="media.html">Explore with Sounds and Sights</a></li>
+    </ul>
+</body>
+</html>
