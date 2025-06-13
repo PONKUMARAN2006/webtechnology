@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEase - Products</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="order.html">Order Form</a> |
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <h2>Available Products</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Wireless Headphones</td>
+            <td>$49.99</td>
+            <td>High-quality sound with <b>50% off</b> this week!</td>
+        </tr>
+        <tr>
+            <td>Smart Watch</td>
+            <td>$89.99</td>
+            <td>Fitness tracking and notifications. <i>New Arrival!</i></td>
+        </tr>
+        <tr>
+            <td>Eco-Friendly Notebook</td>
+            <td>$5.99</td>
+            <td>Made from 100% recycled paper. <u>Best Seller</u></td>
+        </tr>
+    </table>
+</body>
+</html>
