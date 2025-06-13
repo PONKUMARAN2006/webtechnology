@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="schedule.html">Schedule</a> |
+        <a href="registration.html">Registration</a> |
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <h2>Register for the College Fest</h2>
+
+    <form>
+        <label>Name: <input type="text" name="name" required></label><br><br>
+        <label>Email: <input type="email" name="email" required></label><br><br>
+        <label>Phone Number: <input type="tel" name="phone" required></label><br><br>
+
+        <label>Event Preferences: <input type="text" name="preferences"></label><br><br>
+
+        <label>Category:
+            <select name="category">
+                <option value="speaker">Speaker</option>
+                <option value="attendee">Attendee</option>
+                <option value="volunteer">Volunteer</option>
+            </select>
+        </label><br><br>
+
+        <label>Payment Method:</label><br>
+        <input type="radio" name="payment" value="credit"> Credit Card<br>
+        <input type="radio" name="payment" value="debit"> Debit Card<br>
+        <input type="radio" name="payment" value="upi"> UPI<br><br>
+
+        <label><input type="checkbox" name="agree" required> I agree to the terms and conditions</label><br><br>
+
+        <input type="submit" value="Submit Registration">
+    </form>
+</body>
+</html>
