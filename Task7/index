@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Alumni Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form, table {
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    form input {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+
+    form button {
+      padding: 10px 15px;
+      background-color: #3498db;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    form button:hover {
+      background-color: #2980b9;
+    }
+
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .status-table {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .status-box {
+      background: #fff;
+      padding: 15px;
+      width: 45%;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .status-box h3 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Alumni Registration Form</h2>
+
+  <form id="alumniForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="text" id="degree" placeholder="Degree" required />
+    <input type="number" id="batch" placeholder="Batch PassedOut (e.g. 2024)" required />
+    <input type="url" id="linkedin" placeholder="LinkedIn Profile URL" required />
+    <input type="tel" id="phone" placeholder="Phone No" required />
+    <input type="email" id="email" placeholder="Email ID" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Alumni Data Table</h2>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Degree</th>
+        <th>Batch</th>
+        <th>LinkedIn</th>
+        <th>Phone No</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div class="status-table">
+    <div class="status-box">
+      <h3>Active Students</h3>
+      <ul id="activeList"></ul>
+    </div>
+    <div class="status-box">
+      <h3>Inactive Students</h3>
+      <ul id="inactiveList"></ul>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('alumniForm');
+    const tableBody = document.querySelector('#dataTable tbody');
+    const activeList = document.getElementById('activeList');
+    const inactiveList = document.getElementById('inactiveList');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const degree = document.getElementById('degree').value;
+      const batch = parseInt(document.getElementById('batch').value);
+      const linkedin = document.getElementById('linkedin').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+
+      // Add to table
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${name}</td>
+        <td>${degree}</td>
+        <td>${batch}</td>
+        <td><a href="${linkedin}" target="_blank">Profile</a></td>
+        <td>${phone}</td>
+        <td>${email}</td>
+      `;
+      tableBody.appendChild(row);
+
+      // Status based on batch
+      const currentYear = new Date().getFullYear();
+      const listItem = document.createElement('li');
+      listItem.textContent = name;
+
+      if (batch >= currentYear) {
+        activeList.appendChild(listItem);
+      } else {
+        inactiveList.appendChild(listItem);
+      }
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
