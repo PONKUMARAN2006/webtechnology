@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Gallery</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="schedule.html">Schedule</a> |
+        <a href="registration.html">Registration</a> |
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <h2>Event Gallery - Highlights from Previous Years</h2>
+
+    <h3>Audio Highlights</h3>
+    <audio controls>
+        <source src="audio/highlights.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video Recap</h3>
+    <video width="640" height="360" controls poster="images/event_poster.jpg">
+        <source src="videos/recap.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
