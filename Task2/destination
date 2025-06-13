@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinations</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="destinations.html">Destinations</a> |
+        <a href="itinerary.html">Itinerary</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="media.html">Media</a>
+    </nav>
+
+    <h2>Must-Visit Travel Destinations</h2>
+
+    <ul>
+        <li><a href="https://www.japan.travel/en/" target="_blank">Japan</a></li>
+        <li><a href="https://www.visitgreece.gr/" target="_blank">Greece</a></li>
+        <li><a href="https://www.australia.com/" target="_blank">Australia</a></li>
+    </ul>
+
+    <h3>Top 3 Adventure Trips</h3>
+    <ol>
+        <li><a href="https://www.newzealand.com/" target="_blank">New Zealand Trekking</a></li>
+        <li><a href="https://www.iceland.is/" target="_blank">Iceland Northern Lights Tour</a></li>
+        <li><a href="https://www.nationalgeographic.com/travel/" target="_blank">Safari in Kenya</a></li>
+    </ol>
+</body>
+</html>
