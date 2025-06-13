@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEase - Your Friendly Online Store</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="order.html">Order Form</a> |
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <h1>Welcome to <b>ShopEase</b>!</h1>
+    <p>Your one-stop shop for <i>quality</i> and <u>affordable</u> goods. Check out our 
+    <b>limited-time offers</b> and <i>exclusive deals</i> just for you!</p>
+
+    <p>
+        Explore our:
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="order.html">Order Form</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </p>
+</body>
+</html>
